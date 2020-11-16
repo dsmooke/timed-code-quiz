@@ -1,0 +1,108 @@
+body { /*webpage background*/
+    background-color: lightgray;
+    text-align: center;
+    margin:40px;
+}
+
+#shell {/*"Timed Code Quiz" and Instructions and Next button*/
+    text-align: center;
+    
+}
+
+#container { /* box that surrounds question and choices*/
+    width: 100%;
+    height: auto;
+    background-color:lightskyblue;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+h3 { /*question # heading h3*/
+    padding: 20px; 
+    height:20px;
+    width: auto;
+    border: solid;
+    border-color: purple;
+    background-color: purple;
+    text-align: left;
+    color: white;
+}
+
+#divider1 { /* line separating question# from question text*/
+    height:0.2rem;
+    width: auto;
+    background-color: black;
+    margin: 10px;
+}
+
+
+p { /*answer text*/
+    color: #242422;
+    margin-left: 20px;
+}
+
+#opt { /*answer choice letters a,b,c */
+    height: 40px;
+    width: auto;
+    color: yellow;
+    margin-left: 20px;
+}
+
+
+#questionText { /* Question text/asked*/
+    padding: 20px;
+}
+
+#chooseA { /* Answer Choice A, button*/
+    height:20px;
+    width: auto;
+    border: solid;
+    border-color: purple;
+    background-color: purple;
+    text-align: left;
+    color: white;
+    margin-left: 155px;
+}
+
+#chooseB { /* Answer Choice B, button*/
+    height:20px;
+    width: auto;
+    border: solid;
+    border-color: purple;
+    background-color: purple;
+    text-align: left;
+    color: white;
+    margin-left: 155px;
+}
+
+#chooseC { /*Answer Choice C, button*/
+    height:20px;
+    width: auto;
+    border: solid;
+    border-color: purple;
+    background-color: purple;
+    text-align: left;
+    color: white;
+    margin-left: 155px;
+}
+
+#divider2 { /* line separating question area from result text*/
+    height:0.2rem;
+    width: auto;
+    background-color: black;
+    margin: 10px;
+}
+
+#result { /*result = incorrect or correct*/
+    text-align: left;
+    margin: 10px;
+    color: white;
+}
+
+
+#nextQuestion { /*next question button*/
+    background-color: orange;
+  
+
+}
