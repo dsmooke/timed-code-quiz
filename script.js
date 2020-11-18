@@ -15,18 +15,112 @@ const questionTen   = "";
 
 var questionOne = ["What data type yields true/false?", "a) boolean"]
 
-const answers = {   //do i make object "answers"?
-            questionOne: "a", 
-            questionTwo: "b",
-            questionThree: "c",
-            questionFour: "b",
-            questionFive: "a",
-            questionSix: "c",
-            questionSeven: "c",
-            questionEight: "a",
-            questionNine: "c",
-            questionTen: "b",
-        };
+const answers = [  //Array of Objects: [{Question1:"questionText", Answers{ array of "Choices strings"}, CorrectAnswer:"letter"} {Question2:"q2", ...}]  
+
+    {// Question 1    
+     question: "What are the five primitive data types?",
+     answers: {
+        a: "strings, numbers, booleans, arrays, objects",
+        b: "numbers, cords, pools, objects, arrows",
+        c: "strings, numbers, booleon, arrangements, objectives"
+        },
+     correctAnswer: "a"
+    },
+
+    { // Question 2
+      question: "What data type yields true/false?",
+      answers: {
+        a: "string",
+        b: "boolean",
+        c: "array"
+        },
+      correctAnswer: "b"
+    },
+
+    { // Question 3
+      question: "How do you see your result in devTools?",
+      answers: {
+          a: "display.view(result);",
+          b: "council.log(result);",
+          c: "console.log(result);"
+        },
+      correctAnswer: "c"
+    },
+    
+    { // Question 4
+      question: "How do you generate a random number?",
+      answers: {
+          a: "",
+          b: "Math.floor(Math.random());",
+          c: ""
+        },
+      correctAnswer: "b"
+    },
+
+    { // Question 5
+      question: "How do you call a function?",
+      answers: {
+          a: "functionName();",
+          b: "callFunction();",
+          c: "execute(functionName());"
+        },
+      correctAnswer: "a"
+    },
+
+    { // Question 6
+      question: "How...?",
+      answers: {
+          a: "...;",
+          b: "...;",
+          c: "...;"
+        },
+      correctAnswer: "c"
+    },      
+
+    { // Question 7
+      question: "How...?",
+      answers: {
+          a: "...;",
+          b: "...;",
+          c: "...;"
+        },
+      correctAnswer: "c"
+    },
+
+    { // Question 8
+      question: "How...?",
+      answers: {
+          a: "...;",
+          b: "...;",
+          c: "...;"
+        },
+      correctAnswer: "b"
+    },
+
+    { // Question 9
+      question: "How...?",
+      answers: {
+          a: "...;",
+          b: "...;",
+          c: "...;"
+        },
+      correctAnswer: "c"
+    },
+
+    { // Question 10
+      question: "How...?",
+      answers: {
+          a: "...;",
+          b: "...;",
+          c: "...;"
+        },
+      correctAnswer: "b"
+    },
+]; //end of const answers
+
+        
+       
+   
 
 alert(answers.questionOne); // yields a etc.
 
