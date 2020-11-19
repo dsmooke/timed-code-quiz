@@ -113,11 +113,53 @@ function showResults(){
 
 }
 
-function showSlide(){}
+function showSlide(n) {
 
-function showNextSlide(){}
+  //.classList is a property
+  //.classList.remove() - removes one or more class names from an element
+  //.classList.add() - adds one or more class names to an element; if the specified class already exists, the class will not be added
 
-function showLastSlide(){}
+  //the slide that is the currentSlide (slide zero) will have its current-slide class name removed
+  slides[currentSlide].classList.remove('current-slide');
+
+  // the slide that is the current slide (not zero) will have the 'current-slide' class name added to the element's class list; if the 'current-slide' class already exists the class will not be added
+  slides[n].classList.add('current-slide'); 
+
+  //current slide defined by n
+  currentSlide = n;
+
+  //if the currentSlide is zero then do not show the back button
+  if(currentSlide === 0){ 
+    backBtn.style.display = 'none';
+  }
+
+  //otherwise (if currentSlide is not zero) show the back button
+  else{ 
+    backBtn.style.display = 'inline-block';
+  }
+
+  // if the currentSlide is one slide less than the total number of slides (the second to last slide), then do not show next button; instead show submit button
+  if(currentSlide === slides.length-1){
+    nextBtn.style.display = 'none';
+    submitBtn.style.display = 'inline-block';
+  }
+
+  //otherwise (if current slide is not second to last slide) then show next button and do not show submit button
+  else{
+    nextBtn.style.display = 'inline-block';
+    submitBtn.style.display = 'none';
+  }
+}
+
+function showNextSlide(){
+  //in order to go to the next slide, go forward one slide from the current slide 
+  showSlide(currentSlide + 1);
+}
+
+function showLastSlide(){
+  //in order to go to last/previous slide, go back one slide from the current slide
+  showSlide(currentSlide - 1);
+}
        
 function setTime(){
     var timerInterval = setInterval(function() {
