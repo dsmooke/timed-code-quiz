@@ -3,46 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--Link to External CSS Stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Timed Code Quiz</title>
-
 </head>
 
 <body>
     <header id="shell">
     <h1>Timed Code Quiz</h1>
+    <div type="block" id="divider1"></div>
     <h2 id="timer">Countdown Timer 00:00:00</h2>
     <h2 id="result">Result</h2>
     </header>
     <br>
     <br>
-
+  
     <div id="container">
+      <div id="quiz">
+            <div class="slide current-slide"> <!--Q0-->
+                <div class="question">What are the five primitive data types? </div>
+                <div class="answers"> 
+                <label>
+                <input type="radio" name="question0" value="a">
+                    a :
+                    strings, numbers, booleans, arrays, objects
+                </label>
+                <label>
+                <input type="radio" name="question0" value="b">
+                    b :
+                    numbers, cords, pools, objects, arrows
+                </label>
+                <label>
+                    <input type="radio" name="question0" value="c">
+                    c :
+                    strings, numbers, booleon, arrangements, objectives
+                    </label> 
+            </div>
+            </div>
+            <div class="slide"> <!--Q1-->
+                <div class="question"> What data type yields true/false? </div>
+                <div class="answers"> <label>
+                  <input type="radio" name="question1" value="a">
+                  a :
+                  string
+                </label><label>
+                  <input type="radio" name="question1" value="b">
+                  b :
+                  boolean
+                </label><label>
+                  <input type="radio" name="question1" value="c">
+                  c :
+                  aray
+                </label> </div>
+            </div>
+            <div class="slide"> <!--Q2-->
+                <div class="question"> How do you see your result in devTools? </div>
+                <div class="answers"> <label>
+                  <input type="radio" name="question2" value="a">
+                  a :
+                  display.view(result);
+                </label><label>
+                  <input type="radio" name="question2" value="b">
+                  b :
+                  council.log(result);
+                </label><label>
+                  <input type="radio" name="question2" value="c">
+                  c :
+                  console.log(result);
+                </label>
+            </div>
+            </div>
+        </div>
         <!--<div class="slide">
             <h2 class="question">What is the difference between this option, that option, and that option?</h2>
             <h3 class="answers">Lorem ipsum dolor sit, amet consectetur adipisicing elit?</h3>
         </div>-->
+ 
+
+    <div type="block" id="divider2"></div>
+
+    <button type="text" id="back">Back</button>
+    <button type="text" id="next">Next</button>
         
-        <div type="block" id="divider1"></div>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-        <div type="block" id="divider2"></div>
-
-            <button type="text" id="back">Back</button>
-            <br>
-            <button type="text" id="next">Next</button>
-            <br>
-            
-            <br>
-            <br>
-       
     </div> <!--end of container-->
 
 <br>
