@@ -1,6 +1,5 @@
 
 // Variables
-
 const quizShell     = document.getElementById("shell");
 const quizContainer = document.getElementById("container");
 const timerBox      = document.getElementById("timer");
@@ -111,74 +110,21 @@ const quizQuestions = [
     },
 ]; 
 
-// Functions
+// Pagination Variables
+const backBtn = document.getElementById("previous");
+const nextBtn = document.getElementById("next");
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0; // can go +1 or -1 a slide from currentSlide (0)
 
+
+// Functions
 function generateQuiz(){}
 function showResults(){}
 function showQuestion(){}
 function showNextQuestion(){}
 function showLastQuestion(){}
        
-   
-
-alert(answers.questionOne); // yields a etc.
-
-
-
-var quizResults = "";
-var userAnswer = "";
-
-var newScore = (i = 0; i > 0; i++);
-
-function answerQuestion(){ // to answer a question a button must be clicked
-   var choiceA = document.querySelector("#choseA").checked; //choice A selected
-   console.log(choiceA);
-
-   var choiceB = document.querySelector("#choseB").checked;
-   console.log(choiceB);
-
-   var choiceC = document.querySelector("#choseC").checked;
-   console.log(choiceC);
-}
-
-
-
-
-   var resultText = document.querySelector("#result"); // where result incorrect/correct will be displayed
-
-   var correctAns = (score + 1);
-
-   var quizResults = ""; //score will be totaled at end
-   var userAnswer = ""; //different answer for each question
-
-       
- {
-    if (answer === true) {
-        alert("correct!");
-    }
-    else (answer === false) {
-        alert("incorrect!")
-    }
-});        
-        
-
-    
-
-   
-
-
-
-
-
-
-
-//----------------------------TIMER-----------------------
-
-querySelector("#timer");
-
-var timer = document.querySelector("Time");
-
-function setTime() {
+function setTime(){
     var timerInterval = setInterval(function() {
 
         secondsLeft --;
@@ -189,34 +135,33 @@ function setTime() {
             sendMessage();
         }
     }, 60000); //60k miliseconds = 60seconds
-}
+}   
+
+var quizResults = ""; //score will be totaled at end
+var userAnswer = ""; //different answer for each question
+
+var newScore = (i = 0; i > 0; i++);
 
 
-function questionOne() { //question 1
-    choiceA = true; //a is true, correct answer
-    choiceB = false;
-    choiceC = false;
-
-    if (choiceA) {
-        var result = document.querySelector("#result");
-            return("correct");
-            // go to nextQuestion();
-            // score + one
-            }
-    else (choiceB || choiceC) {
-            return("incorrect");
-            //timer -- 100;
-            //score stays
-        }
-
-    
+var correctAns = (score + 1);
+{
+    if (answer === true) {
+        alert("correct!");
     }
+    else (answer === false) {
+        alert("incorrect!")
+    }
+};
+
+
 
 // start quiz
 generateQuiz();
 
-// Event Listeners
+//show first question slide
+showQuestion(currentSlide);
 
+// Event Listeners
 submitBtn.addEventListener("click", showResults);
 backBtn.addEventListener("click", showLastQuestion);
 nextBtn.addEventListener("click", showNextQuestion);
