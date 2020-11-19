@@ -1,82 +1,113 @@
 body { /*webpage background*/
-    background-color: lightgray;
-    text-align: center;
-    margin:40px;
+  background-color: lightgray;
+  text-align: center;
+  margin:40px;
+}
+#divider1 { /* line separating question# from question text*/
+  height:0.1rem;
+  width: auto;
+  background-color: black;
+  margin: 20px;
 }
 
-#shell {/*"Timed Code Quiz" and Countdown Timer*/
-    text-align: center;
-    
+h1 { /*"Timed Code Quiz" title*/
+padding: 10px;
 }
-#timer {
-    text-align: center;
+
+#timer {/* and Countdown Timer*/
+  text-align: center;
 }
 #result{
-    text-align: center;
+  text-align: center;
 }
-#container { /* box that surrounds question and choices*/
-    width: 100%;
-    height: auto;
-    background-color:lightskyblue;
-    border-style: solid;
-    border-color: black;
-    text-align: center;
+#quiz-container { /* box that surrounds question and choices*/
+  width: 100%;
+  height: auto;
+  background-color:lightskyblue;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
 }
 .question {
-    padding: 20px; 
-    height:20px;
-    width: auto;
-    border: solid;
-    border-color: purple;
-    background-color: purple;
-    text-align: left;
-    color: rgb(3, 3, 3);
+  font-size: 30px;
+  margin-bottom: 10px;
+  /*
+  padding: 20px; 
+  height:20px;
+  width: auto;
+  border: solid;
+  border-color: purple;
+  background-color: purple;
+  text-align: left;
+  color: rgb(3, 3, 3);*/
 }
 .answers { /*question # heading h3*/
-    padding: 20px; 
-    height:20px;
-    width: auto;
-    border: solid;
-    border-color: rgb(36, 32, 36);
-    background-color: rgb(211, 159, 211);
-    text-align: left;
-    color: rgb(2, 2, 2);
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+  /*padding: 20px; 
+  height:20px;
+  width: auto;
+  border: solid;
+  border-color: rgb(36, 32, 36);
+  background-color: rgb(211, 159, 211);
+  text-align: left;
+  color: rgb(2, 2, 2);
+  */
 }
 
-#divider1 { /* line separating question# from question text*/
-    height:0.1rem;
-    width: auto;
-    background-color: black;
-    margin: 10px;
+.answers label{
+  display: block;
+  margin-bottom: 10px;
 }
-
-
-
 
 
 #divider2 { /* line separating question area from result text*/
-    height:0.1rem;
-    width: auto;
-    background-color: black;
-    margin: 10px;
+  height:0.1rem;
+  width: auto;
+  background-color: black;
+  margin: 10px;
 }
 
 
 button{ /*buttons: next, previous, submit*/
-    /*display: inline-block;*/
-    font-family: 'Work Sans', sans-serif;
-      font-size: 22px;
-      background-color: rgb(81, 31, 219);
-      color: #fff;
-      border: 0px;
-      border-radius: 3px;
-      padding: 25px;
-      cursor: pointer;
-      margin-bottom: 20px;
-  }
-  button:hover { /*button display when mouse over*/
-      background-color: rgb(119, 112, 219);
-  }
+  /*display: inline-block;*/
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: rgb(81, 31, 219);
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover { /*button display when mouse over*/
+    background-color: rgb(119, 112, 219);
+}
+
+.slide{ /* hides next slides*/
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{ /* current slide's visibility*/
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{ /* format of quiz display area*/
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+
+
 
 
 /*Media Queries*/
