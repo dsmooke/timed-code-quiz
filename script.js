@@ -156,7 +156,7 @@ function showNextSlide(){
   showSlide(currentSlide + 1);
 }
 
-function showLastSlide(){
+function showPreviousSlide(){
   //in order to go to last/previous slide, go back one slide from the current slide
   showSlide(currentSlide - 1);
 }
