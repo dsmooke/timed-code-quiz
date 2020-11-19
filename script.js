@@ -9,7 +9,7 @@ const submitBtn     = document.getElementById("submit");
 //Array of Objects: [{Question1:"questionText", Answers{ array of "Choices strings"}, CorrectAnswer:"letter"} {Question2:"q2", ...}]  
 const quizQuestions = [  
 
-    {// Question 1    
+    {// Question 1, Q0 in html    
      question: "What are the five primitive data types?",
      answers: {
         a: "strings, numbers, booleans, arrays, objects",
@@ -19,7 +19,7 @@ const quizQuestions = [
      correctAnswer: "a"
     },
 
-    { // Question 2
+    { // Question 2, Q1 in html
       question: "What data type yields true/false?",
       answers: {
         a: "string",
@@ -29,7 +29,7 @@ const quizQuestions = [
       correctAnswer: "b"
     },
 
-    { // Question 3
+    { // Question 3, Q2 in html
       question: "How do you see your result in devTools?",
       answers: {
           a: "display.view(result);",
@@ -39,17 +39,7 @@ const quizQuestions = [
       correctAnswer: "c"
     },
     
-    { // Question 4
-      question: "How do you generate a random number?",
-      answers: {
-          a: "",
-          b: "Math.floor(Math.random());",
-          c: ""
-        },
-      correctAnswer: "b"
-    },
-
-    { // Question 5
+    { // Question 4, Q3 in html
       question: "How do you call a function?",
       answers: {
           a: "functionName();",
@@ -59,55 +49,15 @@ const quizQuestions = [
       correctAnswer: "a"
     },
 
-    { // Question 6
-      question: "How...?",
+    { // Question 5, Q4 in html
+      question: "What is the index number of coffee in drinks array? drinks=[tea, coffee, water];?",
       answers: {
-          a: "...;",
-          b: "...;",
-          c: "...;"
+          a: "0",
+          b: "4-9",
+          c: "1"
         },
       correctAnswer: "c"
     },      
-
-    { // Question 7
-      question: "How...?",
-      answers: {
-          a: "...;",
-          b: "...;",
-          c: "...;"
-        },
-      correctAnswer: "c"
-    },
-
-    { // Question 8
-      question: "How...?",
-      answers: {
-          a: "...;",
-          b: "...;",
-          c: "...;"
-        },
-      correctAnswer: "b"
-    },
-
-    { // Question 9
-      question: "How...?",
-      answers: {
-          a: "...;",
-          b: "...;",
-          c: "...;"
-        },
-      correctAnswer: "c"
-    },
-
-    { // Question 10
-      question: "How...?",
-      answers: {
-          a: "...;",
-          b: "...;",
-          c: "...;"
-        },
-      correctAnswer: "b"
-    },
 ]; 
 
 // Pagination Variables
