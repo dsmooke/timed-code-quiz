@@ -14,45 +14,39 @@
 <body>
     <header id="shell">
     <h1>Timed Code Quiz</h1>
-    <h2>Click "Next" to start the quiz.</h2>
-    <button type="text" id="nextBtn">NEXT</button>
+    <h2 id="timer">Countdown Timer 00:00:00</h2>
+    <h2 id="result">Result</h2>
     </header>
     <br>
     <br>
 
     <div id="container">
-        <h3 id="qestionNumber">Question #1</h3>
-        <h2 id="questionText">What is the difference between this option, that option, and that option?</h2>
+        <!--<div class="slide">
+            <h2 class="question">What is the difference between this option, that option, and that option?</h2>
+            <h3 class="answers">Lorem ipsum dolor sit, amet consectetur adipisicing elit?</h3>
+        </div>-->
+        
         <div type="block" id="divider1"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <div type="block" id="divider2"></div>
+
+            <button type="text" id="back">Back</button>
+            <br>
+            <button type="text" id="next">Next</button>
+            <br>
             
-            <label id="opt">a) </label>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
-            <button type="text" id="choseA">Answer Choice A</button>
-
-            <br>
-
-            <label id="opt">b) </label>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
-            <button type="text" id="choseB">Answer Choice B</button>
-
-            <br>
-
-            <label id="opt">c) </label>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
-            <button type="text" id="choseC">Answer Choice C</button>
-
             <br>
             <br>
-
-            <div type="block" id="divider2"></div>
-            <div id="result">Result</div>
-            <!--<p id="choiceB">b)</p>
-            <p id="choiceC">c)</p>-->
-
+       
     </div> <!--end of container-->
 
 <br>
-    <div><button type="text" id="nextQuestion">Next Question</button></div>
+    <div><button type="text" id="submit">Submit</button></div>
 
     <script src="script.js"></script>
 </body>
