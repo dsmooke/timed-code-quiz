@@ -68,10 +68,55 @@ let currentSlide = 0; // can go +1 or -1 a slide from currentSlide (0)
 
 
 // Functions
-function generateQuiz(){}
-function showResults(){}
+function generateQuiz(){
+
+  //variable in which to store the HTML output
+  const output = []; //WHAT?
+
+  //for each question execute the function once for each question/array element
+  myQuestions.forEach()
+}
+
+function showResults(){
+
+  //gather (defined?) answers from quiz
+  const answerContainers = quizContainer.querySelectorAll(".answers");
+
+  // ket track of user's answers - user starts with score of zero/number of correct
+  let numbCorrect = 0;
+
+  //for each question gather the question name, and its question number
+  myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+    //find user's selected answer
+    const answerContainers = answerContainers[questionNumber]; //answerContainers defined as the question# and its answer choices
+    const selector = `input[name=question${questionNumber}]:checked`; //template string: selector is defined as the html <input name=question...> questionNumber that's checked by user
+    const userAnswer = (answerContainer.querySelector(selector)|| {}).value; //user's answer defined as the checked answer choice within the answerContainers or the object(question's) html value (a,b, or c).
+
+    //if the answer is correct 
+    if(userAnswer === currentQuestion.correctAnswer){
+      //add to the number of correct answers
+      numCorrect++; //add by one with each correct answer
+
+      //color correct answers green
+      answerContainers[questionNumber].style.color = 'lightgreen';
+    }
+    //if answer is incorrect or blank
+    else{
+      //color incorrect/blank answers red
+      answerContainers[questionNumber].style.color = 'red';
+    }
+  });
+
+  //show number of correct answers out of total
+  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`; //area in html where show results display '# correct out of # of questons'
+
+}
+
 function showQuestion(){}
+
 function showNextQuestion(){}
+
 function showLastQuestion(){}
        
 function setTime(){
