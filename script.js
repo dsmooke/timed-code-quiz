@@ -113,11 +113,11 @@ function showResults(){
 
 }
 
-function showQuestion(){}
+function showSlide(){}
 
-function showNextQuestion(){}
+function showNextSlide(){}
 
-function showLastQuestion(){}
+function showLastSlide(){}
        
 function setTime(){
     var timerInterval = setInterval(function() {
@@ -154,7 +154,7 @@ var correctAns = (score + 1);
 generateQuiz();
 
 //show first question slide
-showQuestion(currentSlide);
+showSlide(currentSlide);
 
 // Event Listeners
 submitBtn.addEventListener("click", showResults);
