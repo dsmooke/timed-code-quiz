@@ -7,7 +7,8 @@ const timerBox      = document.getElementById("timer");
 const resultsBox    = document.getElementById("result"); // where to display result
 const submitBtn     = document.getElementById("submit");
 
-const quizQuestions = [  //Array of Objects: [{Question1:"questionText", Answers{ array of "Choices strings"}, CorrectAnswer:"letter"} {Question2:"q2", ...}]  
+//Array of Objects: [{Question1:"questionText", Answers{ array of "Choices strings"}, CorrectAnswer:"letter"} {Question2:"q2", ...}]  
+const quizQuestions = [  
 
     {// Question 1    
      question: "What are the five primitive data types?",
@@ -108,12 +109,13 @@ const quizQuestions = [  //Array of Objects: [{Question1:"questionText", Answers
         },
       correctAnswer: "b"
     },
-]; //end of const answers
+]; 
 
 // Functions
 
+function generateQuiz(){}
 function showResults(){}
-function showCurrentQuestion(){}
+function showQuestion(){}
 function showNextQuestion(){}
 function showLastQuestion(){}
        
@@ -137,48 +139,7 @@ function answerQuestion(){ // to answer a question a button must be clicked
 
    var choiceC = document.querySelector("#choseC").checked;
    console.log(choiceC);
-
-
-let (questionOne === choseA) {
-    quizResults = newScore.concat(score);
-    if (choseA) {
-        //add point
-        //timer same
-        else (choseB || choseC ) {
-            //point as is
-            //timer subtract 10 seconds
-        }
-    }
-    }
-
-let (questionTwo === choseB) {
-    quizResults = (score + 1)
-    }
-
-let (questionThree === choseC) {
-    }
-
-let (questionFour === choseB) {
-    }
-
-let (questionFive === choseA) {
-    }
-
-let (questionSix === choseC) {
-    }
-
-let (questionSeven === choseC) {
-    }
-
-let (questionEight === choseA) {
-    }
-
-let (questionNine === choseC) {
-    }
-
-let (questionTen === choseB) {
-    }
-    }
+}
 
 
 
@@ -191,15 +152,22 @@ let (questionTen === choseB) {
    var userAnswer = ""; //different answer for each question
 
        
-        
+ {
+    if (answer === true) {
+        alert("correct!");
+    }
+    else (answer === false) {
+        alert("incorrect!")
+    }
+});        
         
 
     
-}
-    //display question ("What data yields true/false?");
 
-}
-const questionTwo = document.querySelector()
+   
+
+
+
 
 
 
@@ -244,20 +212,14 @@ function questionOne() { //question 1
     
     }
 
-
+// start quiz
+generateQuiz();
 
 // Event Listeners
 
 submitBtn.addEventListener("click", showResults);
 backBtn.addEventListener("click", showLastQuestion);
 nextBtn.addEventListener("click", showNextQuestion);
- {
-    if (answer === true) {
-        alert("correct!");
-    }
-    else (answer === false) {
-        alert("incorrect!")
-    }
-});
+
 
 
