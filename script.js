@@ -1,15 +1,7 @@
 
+
 const result        = document.querySelector("#questionText"); // where to display result
-const questionOne   = "What data type yields true/false?"
-const questionTwo   = "What..."
-const questionThree = "What is the correct syntax for an array with Jack, Jill, Tim, Tess?"
-const questionFour  = "What method do you use to generate a random item, character?"
-const questionFive  = "How do you see your result in devTools?"
-const questionSix   = "";
-const questoinSeven = "";
-const questionEight = "";
-const questionNine  = "";
-const questionTen   = "";
+
 
 // objects for questions? var question1 = {choseA:"true", choseB:"false", choseC:"false"};
 
