@@ -4,11 +4,16 @@ body { /*webpage background*/
     margin:40px;
 }
 
-#shell {/*"Timed Code Quiz" and Instructions and Next button*/
+#shell {/*"Timed Code Quiz" and Countdown Timer*/
     text-align: center;
     
 }
-
+#timer {
+    text-align: center;
+}
+#result{
+    text-align: center;
+}
 #container { /* box that surrounds question and choices*/
     width: 100%;
     height: auto;
@@ -17,8 +22,7 @@ body { /*webpage background*/
     border-color: black;
     text-align: center;
 }
-
-h3 { /*question # heading h3*/
+.question {
     padding: 20px; 
     height:20px;
     width: auto;
@@ -26,83 +30,78 @@ h3 { /*question # heading h3*/
     border-color: purple;
     background-color: purple;
     text-align: left;
-    color: white;
+    color: rgb(3, 3, 3);
+}
+.answers { /*question # heading h3*/
+    padding: 20px; 
+    height:20px;
+    width: auto;
+    border: solid;
+    border-color: rgb(36, 32, 36);
+    background-color: rgb(211, 159, 211);
+    text-align: left;
+    color: rgb(2, 2, 2);
 }
 
 #divider1 { /* line separating question# from question text*/
-    height:0.2rem;
+    height:0.1rem;
     width: auto;
     background-color: black;
     margin: 10px;
 }
 
 
-p { /*answer text*/
-    color: #242422;
-    margin-left: 20px;
-}
-
-#opt { /*answer choice letters a,b,c */
-    height: 40px;
-    width: auto;
-    color: yellow;
-    margin-left: 20px;
-}
 
 
-#questionText { /* Question text/asked*/
-    padding: 20px;
-}
-
-#chooseA { /* Answer Choice A, button*/
-    height:20px;
-    width: auto;
-    border: solid;
-    border-color: purple;
-    background-color: purple;
-    text-align: left;
-    color: white;
-    margin-left: 155px;
-}
-
-#chooseB { /* Answer Choice B, button*/
-    height:20px;
-    width: auto;
-    border: solid;
-    border-color: purple;
-    background-color: purple;
-    text-align: left;
-    color: white;
-    margin-left: 155px;
-}
-
-#chooseC { /*Answer Choice C, button*/
-    height:20px;
-    width: auto;
-    border: solid;
-    border-color: purple;
-    background-color: purple;
-    text-align: left;
-    color: white;
-    margin-left: 155px;
-}
 
 #divider2 { /* line separating question area from result text*/
-    height:0.2rem;
+    height:0.1rem;
     width: auto;
     background-color: black;
     margin: 10px;
 }
 
-#result { /*result = incorrect or correct*/
-    text-align: left;
-    margin: 10px;
-    color: white;
+
+button{ /*buttons: next, previous, submit*/
+    /*display: inline-block;*/
+    font-family: 'Work Sans', sans-serif;
+      font-size: 22px;
+      background-color: rgb(81, 31, 219);
+      color: #fff;
+      border: 0px;
+      border-radius: 3px;
+      padding: 25px;
+      cursor: pointer;
+      margin-bottom: 20px;
+  }
+  button:hover { /*button display when mouse over*/
+      background-color: rgb(119, 112, 219);
+  }
+
+
+/*Media Queries*/
+
+/*When viewport reaches 690px*/ 
+font-size: 1rem;
+@media (max-width: 690px) {   
+  
+  /*reduce "Generate Password" button size*/
+  .btn {                  
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+/*and reduce "Your Secure Password" text*/
+  #password {             
+    font-size: 1rem;
+  }
 }
 
+/*When viewport reaches 500px*/ 
+@media (max-width: 500px) {
 
-#nextQuestion { /*next question button*/
-    background-color: orange;
-  
-
+  /*reduce "Generate Password" button size*/
+  .btn {                
+    font-size: 0.8rem;
+  }
 }
