@@ -1,13 +1,13 @@
 
+// Variables
 
-const result        = document.querySelector("#questionText"); // where to display result
+const quizShell     = document.getElementById("shell");
+const quizContainer = document.getElementById("container");
+const timerBox      = document.getElementById("timer");
+const resultsBox    = document.getElementById("result"); // where to display result
+const submitBtn     = document.getElementById("submit");
 
-
-// objects for questions? var question1 = {choseA:"true", choseB:"false", choseC:"false"};
-
-var questionOne = ["What data type yields true/false?", "a) boolean"]
-
-const answers = [  //Array of Objects: [{Question1:"questionText", Answers{ array of "Choices strings"}, CorrectAnswer:"letter"} {Question2:"q2", ...}]  
+const quizQuestions = [  //Array of Objects: [{Question1:"questionText", Answers{ array of "Choices strings"}, CorrectAnswer:"letter"} {Question2:"q2", ...}]  
 
     {// Question 1    
      question: "What are the five primitive data types?",
@@ -110,7 +110,12 @@ const answers = [  //Array of Objects: [{Question1:"questionText", Answers{ arra
     },
 ]; //end of const answers
 
-        
+// Functions
+
+function showResults(){}
+function showCurrentQuestion(){}
+function showNextQuestion(){}
+function showLastQuestion(){}
        
    
 
@@ -243,7 +248,10 @@ function questionOne() { //question 1
 
 // Event Listeners
 
-nextQuestion.addEventListener("click", function() {
+submitBtn.addEventListener("click", showResults);
+backBtn.addEventListener("click", showLastQuestion);
+nextBtn.addEventListener("click", showNextQuestion);
+ {
     if (answer === true) {
         alert("correct!");
     }
@@ -252,4 +260,4 @@ nextQuestion.addEventListener("click", function() {
     }
 });
 
-var result = document.querySelector(#result); // where want result to be displated: correct or incorrect
+
