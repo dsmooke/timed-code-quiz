@@ -61,19 +61,23 @@
     // Functions
 (function() {
 
+    //function to make quiz
     function generateQuiz(){
 
-      //variable in which to store the HTML output
-      const output = []; //WHAT?
+      //empty array to fill with user outputs and correct answers...?
+      const output = []; 
 
-      //for each question execute the function once for each question/array element
+      //for each question execute the function once for each question (an array element) calling back the index value of the question asked (quizQuestions)...?
       quizQuestions.forEach(
         (currentQuestion, questionNumber) => {
     
+          //empty array to fill with quiz's answer choices...?
           const answers = [];
     
+          //for loop: for the currentQuestion find the answers, add those answers into the answers array []...?
           for(letter in currentQuestion.answers){
     
+            //each answer choice will be added into the answers array [] - make template string so that answer choices can be added to the answers array [] via a radio button...?
             answers.push(
             `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -81,16 +85,17 @@
               </label>`
             );
           }
-    
+          
+          //each of the user's answer choices will be added to the output array [] - make template string so that each question can be displayed on a slide/currentSlide; slide holds the answer choices/way to collect answers...?
           output.push(
             `<div class="slide">
                 <div class="question"> ${currentQuestion.question} </div>
-                <div class="answers"> ${answers.join("")} </div>
+                <div class="answers"> ${answers.join('')} </div>
               </div>`
           );
         }
       );
-    
+        //join output array with answers array via the inner/inserted html - display each question and the answer choices on their own slide at the same time..?
       quizContainer.innerHTML = output.join('');
     }
 
