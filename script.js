@@ -67,7 +67,7 @@
       const output = []; //WHAT?
 
       //for each question execute the function once for each question/array element
-      myQuestions.forEach(
+      quizQuestions.forEach(
         (currentQuestion, questionNumber) => {
     
           const answers = [];
@@ -196,8 +196,8 @@
 
     // Event Listeners
     submitBtn.addEventListener("click", showResults);
-    backBtn.addEventListener("click", showLastQuestion);
-    nextBtn.addEventListener("click", showNextQuestion);
+    backBtn.addEventListener("click", showPreviousSlide);
+    nextBtn.addEventListener("click", showNextSlide);
 
 })();   
 
