@@ -67,7 +67,32 @@
       const output = []; //WHAT?
 
       //for each question execute the function once for each question/array element
-      myQuestions.forEach()
+      myQuestions.forEach(
+        (currentQuestion, questionNumber) => {
+    
+          const answers = [];
+    
+          for(letter in currentQuestion.answers){
+    
+            answers.push(
+            `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} : ${currentQuestion.answers[letter]}
+              </label>`
+            );
+          }
+    
+          output.push(
+            `<div class="slide">
+                <div class="question"> ${currentQuestion.question} </div>
+                <div class="answers"> ${answers.join("")} </div>
+              </div>`
+          );
+        }
+      );
+    
+      quizContainer.innerHTML = output.join('');
+    }
 
     function showResults(){
 
