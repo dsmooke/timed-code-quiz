@@ -1,16 +1,18 @@
 // Variables
-const startingMinutes = 1;
-let time = startingMinutes * 60;
+const startingMinutes = 1; //setting start time to a minute
+let time = startingMinutes * 60; //a minute is 60 seconds - js multiply startingMins by 60.
 
-const countdownEl = document.getElementById('timer');
+const countdownEl = document.getElementById('timer'); //where timer will be displayed
 
-setInterval(updateCountdown, 1000);
+setInterval(updateCountdown, 1000); // counter will show every second. 
 
 function updateCountdown() {
   const minutes = Math.floor(time / 60);
   let seconds = time % 60;
 
-  countdownEl.innerHTML = `${minutes}:${seconds}`;
+  seconds = seconds < 10 ? '0' + seconds : seconds; //makes the seconds show as 00
+
+  countdownEl.innerHTML = `${minutes}:${seconds}`; // display as 00:0, counting down
   time--;
 }
 
