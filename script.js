@@ -14,6 +14,11 @@ function updateCountdown() {
 
   countdownEl.innerHTML = `${minutes}:${seconds}`; // display as 00:0, counting down
   time--;
+  
+  if(time < 0) {
+    clearInterval(1);
+    console.log('Ding');
+  }
 }
 
 const quizContainer = document.getElementById("quiz");
