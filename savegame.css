@@ -20,19 +20,20 @@ body { /*webpage background*/
 #end {
   padding: 10px;
   color: white;
-  font-family: monospace;
+  
 }
   
-h2 { /*"Timed Code Quiz" title*/
+h2 { /*"Enter to save your score"*/
   padding: 10px;
   color: white;
-  font-family: monospace;
+  font-family: 'Goldman', cursive;
+  font-size: 50px;
 }
   
 #score {
   text-align: center;
   color: white;
-  font-family: monospace;
+  font-family: 'Goldman', cursive;
   font-size: 30px;
   margin-left: 40px;
   padding: 20px;
@@ -43,42 +44,6 @@ h2 { /*"Timed Code Quiz" title*/
     padding:20px;
 }
 
-.question {
-  display: inline-block;
-  text-align: center;
-  position:relative;
-  font-size: 25px;
-  color: white;
-  font-family: monospace;
-  padding:50px;
-  margin:20px;
-  height:20px;
-  width: auto;
-    
-  }
-  
-  .answers { /*question # heading h3*/
-    display: inline-block;
-    position:relative;
-    font-size: 20px;
-    font-family: monospace;
-    text-align: left;
-    color: white;
-    margin-top:20px;
-    
-    border: solid;
-    height: 10%;
-    width: 80%;
-  }
-  
-  /*answer choices*/
-  .answers label{ 
-    display: block;
-    margin-bottom: 10px;
-    padding:15px;
-  }
-  
-  
 
   .slide{ /* hides next slides - question answer areas combo*/ 
     position: absolute;
@@ -99,7 +64,7 @@ h2 { /*"Timed Code Quiz" title*/
   display: flex;
   align-items: center;
   text-align: center;
-  font-family: monospace;
+  font-family: 'Goldman', cursive;
   font-size: 22px;
   background-color:rgb(34, 173, 16);
   color: rgb(3, 3, 3);
@@ -114,11 +79,12 @@ h2 { /*"Timed Code Quiz" title*/
 .btn:hover { /*button display when mouse over*/
   background-color: rgb(119, 112, 219);
 }
-  
 
 #username {
   display: inline-block;
   color:black;
+  margin:30px;
+  padding: 10px;
   
 
 }
