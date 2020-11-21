@@ -1,4 +1,19 @@
 // Variables
+const startingMinutes = 1;
+let time = startingMinutes * 60;
+
+const countdownEl = document.getElementById('timer');
+
+setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  countdownEl.innerHTML = `${minutes}:${seconds}`;
+  time--;
+}
+
 const quizContainer = document.getElementById("quiz");
 const timerBox      = document.getElementById("timer");
 const resultsBox    = document.getElementById("results"); // where to display result
@@ -61,8 +76,8 @@ const quizQuestions = [
 // Functions
 (function() {
 
-//function to make quiz
-function generateQuiz(){
+  //function to make quiz
+  function generateQuiz(){
 
   //empty array to fill with user outputs and correct answers...?
   const output = []; 
@@ -97,9 +112,9 @@ function generateQuiz(){
   );
     //join output array with answers array via the inner/inserted html - display each question and the answer choices on their own slide at the same time..?
   quizContainer.innerHTML = output.join('');
-}
+  }
 
-function showResults(){
+  function showResults(){
 
   //gather (defined?) answers from quiz
   const answerContainers = quizContainer.querySelectorAll(".answers");
@@ -132,10 +147,9 @@ function showResults(){
 
   //show number of correct answers out of total
   resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`; //area in html where show results display '# correct out of # of questons'
+  }
 
-}
-
-function showSlide(n) {
+  function showSlide(n) {
 
   //.classList is a property
   //.classList.remove() - removes one or more class names from an element
@@ -171,37 +185,37 @@ function showSlide(n) {
     nextBtn.style.display = 'inline-block';
     submitBtn.style.display = 'none';
   }
-}
+  }
 
-function showNextSlide(){
+  function showNextSlide(){
   //in order to go to the next slide, go forward one slide from the current slide 
   showSlide(currentSlide + 1);
-}
+  }
 
-function showPreviousSlide(){
+  function showPreviousSlide(){
   //in order to go to last/previous slide, go back one slide from the current slide
   showSlide(currentSlide - 1);
-}
+  }
 
 
 
 
-// start quiz
-generateQuiz();
+  // start quiz
+  generateQuiz();
 
-// Pagination Variables
-const backBtn = document.getElementById("back");
-const nextBtn = document.getElementById("next");
-const slides = document.querySelectorAll(".slide");
-let currentSlide = 0; // can go +1 or -1 a slide from currentSlide (0)
+  // Pagination Variables
+  const backBtn = document.getElementById("back");
+  const nextBtn = document.getElementById("next");
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0; // can go +1 or -1 a slide from currentSlide (0)
 
 
-//show first question slide
-showSlide(currentSlide);
+  //show first question slide
+  showSlide(currentSlide);
 
-// Event Listeners
-submitBtn.addEventListener("click", showResults);
-backBtn.addEventListener("click", showPreviousSlide);
-nextBtn.addEventListener("click", showNextSlide);
+  // Event Listeners
+  submitBtn.addEventListener("click", showResults);
+  backBtn.addEventListener("click", showPreviousSlide);
+  nextBtn.addEventListener("click", showNextSlide);
 
-})();   
+})();   //end of function
