@@ -1,19 +1,21 @@
+
 body { /*webpage background*/
   background-color: rgb(9, 10, 56);
   text-align: center;
   margin:40px;
+  font-family: 'Goldman', cursive;
 }
 
 h1 { /*"Timed Code Quiz" title*/
 padding: 10px;
 color: white;
-font-family: monospace;
+font-family: 'Goldman', cursive;
 }
 
 #timer {/* and Countdown Timer*/
   text-align: center;
   color: white;
-  font-family: monospace;
+  font-family: 'Goldman', cursive;
   font-size: 30px;
   margin-right: 40px;
   padding: 20px;
@@ -22,24 +24,17 @@ font-family: monospace;
 #score {
   text-align: center;
   color: white;
-  font-family: monospace;
+  font-family: 'Goldman', cursive;
   font-size: 30px;
   margin-left: 40px;
   padding: 20px;
-}
-
-#divider1 { /* line separating question# from question text*/
-  height:0.1rem;
-  width: auto;
-  background-color: black;
-  margin: 20px;
 }
 
 
 .container {  /*box that surrounds question and choices*/
   padding:20px;
 }
-.question {
+.question { /*question text*/
   display: inline-block;
   text-align: center;
   position:relative;
@@ -75,13 +70,6 @@ font-family: monospace;
 }
 
 
-#divider2 { /* line separating question area from result text*/
-  height:0.2rem;
-  width: auto;
-  background-color: black;
-  margin-top:250px;
-  margin-bottom: 20px;
-}
 
 .slide{ /* hides next slides - question answer areas combo*/ 
   position: absolute;
@@ -102,15 +90,15 @@ font-family: monospace;
   display: inline-block;
   align-items: center;
   text-align: center;
-  font-family: monospace;
-  font-size: 22px;
+  font-family: 'Goldman', cursive;
+  font-size: 30px;
   background-color:rgb(34, 173, 16);
   color: rgb(3, 3, 3);
   border: 0px;
   border-radius: 4px;
   padding: 25px;
   cursor: pointer;
-  margin-top:20px;
+  margin-top:30px;
   width: 30%;
 
   
@@ -120,7 +108,9 @@ font-family: monospace;
     background-color: rgb(119, 112, 219);
 }
 
-
+#submit {
+  width: 94px;
+}
 
 
 
@@ -132,12 +122,9 @@ font-family: monospace;
   
   /*reduce button size*/
   .btn {                  
-      margin: 16px 0px 0px 0px;
-      padding: 10px 15px;
-      font-size: 1rem;
+    
+      font-size: 1.5rem;
   }
-
-  
 }
 
 /*When viewport reaches 500px*/ 
@@ -145,6 +132,6 @@ font-family: monospace;
   
   /*reduce button size*/
   .btn {                
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
