@@ -1,0 +1,193 @@
+:root {
+  background-color: rgb(9, 10, 56);
+  }
+  
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  }
+
+body { /*webpage background*/
+  background-color: rgb(9, 10, 56);
+  text-align: center;
+  margin:40px;
+  }
+
+#end {
+  padding: 10px;
+  color: white;
+  font-family: monospace;
+}
+  
+h2 { /*"Timed Code Quiz" title*/
+  padding: 10px;
+  color: white;
+  font-family: monospace;
+}
+  
+#timer {/* and Countdown Timer*/
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  font-size: 30px;
+  margin-right: 40px;
+  padding: 20px;
+  }
+  
+#score {
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  font-size: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  }
+  
+  #divider1 { /* line separating question# from question text*/
+    height:0.1rem;
+    width: auto;
+    background-color: black;
+    margin: 20px;
+  }
+  
+  
+.container {  /*box that surrounds question and choices*/
+    padding:20px;
+}
+
+.question {
+  display: inline-block;
+  text-align: center;
+  position:relative;
+  font-size: 25px;
+  color: white;
+  font-family: monospace;
+  padding:50px;
+  margin:20px;
+  height:20px;
+  width: auto;
+    
+  }
+  
+  .answers { /*question # heading h3*/
+    display: inline-block;
+    position:relative;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: left;
+    color: white;
+    margin-top:20px;
+    
+    border: solid;
+    height: 10%;
+    width: 80%;
+  }
+  
+  /*answer choices*/
+  .answers label{ 
+    display: block;
+    margin-bottom: 10px;
+    padding:15px;
+  }
+  
+  
+
+  #divider2 { /* line separating question area from result text*/
+    height:0.2rem;
+    width: auto;
+    background-color: black;
+    margin-top:250px;
+    margin-bottom: 20px;
+  }
+  
+  .slide{ /* hides next slides - question answer areas combo*/ 
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .current-slide{ /* current slide's visibility*/
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .btn { /*buttons: next, previous, submit*/
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 22px;
+    background-color:rgb(34, 173, 16);
+    color: rgb(3, 3, 3);
+    border: 0px;
+    border-radius: 4px;
+    padding: 25px;
+    cursor: pointer;
+    margin-top:20px;
+    width: 30%;
+  
+    
+  }
+
+#username {
+  display: inline-block;
+  color:black;
+  display: inline-block;
+}
+
+#saveBtn {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 22px;
+  background-color:rgb(34, 173, 16);
+  color: rgb(3, 3, 3);
+  border: 0px;
+  border-radius: 4px;
+  padding: 25px;
+  cursor: pointer;
+  margin-top:20px;
+  width: 30%;
+}
+  
+  .btn:hover { /*button display when mouse over*/
+      background-color: rgb(119, 112, 219);
+  }
+  
+  
+  
+  
+  
+  
+  /*Media Queries*/
+  
+  /*When viewport reaches 690px*/ 
+  @media (max-width: 690px) {   
+    
+    /*reduce button size*/
+    .btn {                  
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+  
+    
+  }
+  
+  /*When viewport reaches 500px*/ 
+  @media (max-width: 500px) {
+    
+    /*reduce button size*/
+    .btn {                
+      font-size: 0.8rem;
+    }
+  }
