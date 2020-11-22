@@ -1,4 +1,4 @@
-// Variables
+// Timer Countdown
 const startingMinutes = 1; //setting start time to a minute
 let time = startingMinutes * 60; //a minute is 60 seconds - js multiply startingMins by 60.
 
@@ -21,6 +21,7 @@ function updateCountdown() {
   }
 }
 
+// Variables
 const quizContainer = document.getElementById("quiz");
 const timerBox      = document.getElementById("timer");
 const resultsBox    = document.getElementById("results"); // where to display result
@@ -124,13 +125,13 @@ const quizQuestions = [
   function showResults(){
 
   //gather (defined?) answers from quiz
-  const answerContainers = quizContainer.querySelectorAll(".answers");
+  const answerContainers = quizContainer.querySelectorAll("#score");
 
   // ket track of user's answers - user starts with score of zero/number of correct
   let numbCorrect = 0;
 
   //for each question gather the question name, and its question number
-  myQuestions.forEach( (currentQuestion, questionNumber) => {
+  quizQuestions.forEach( (currentQuestion, questionNumber) => {
 
     //find user's selected answer
     const answerContainers = answerContainers[questionNumber]; //answerContainers defined as the question# and its answer choices
