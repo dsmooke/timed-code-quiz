@@ -1,7 +1,9 @@
-const highScoresList = document.querySelector("#highScoresList");
-const highScores = JSON.parse(localStorage.getItem("highScores")) || []
 
-highScoresList.innerHTML = 
-highScores.map(score => {
-    resturn `<li class"high-score">${score.name} - ${score.sore}</li>`
-}).join(''); 
+highScores = 500;
+let username = input(value);
+(src="savegame.html").getItem(value) = username;
+ let pastScores = JSON.parse(localStorage.getItem("highScores")) || []
+
+highScoresList.innerHTML = `<li class"high-score">${username} - ${highScores}</li>`;
+
+localStorage();
