@@ -7,13 +7,15 @@ body { /*webpage background*/
 h1 { /*"Timed Code Quiz" title*/
   padding: 10px;
   color: rgb(250, 3, 3);
-  font-family: monospace;
+  font-family: 'Goldman', cursive;
+  font-size: 70px;
 }
 
 h2 { 
     padding: 10px;
     color: white;
-    font-family: monospace;
+    font-family: 'Goldman', cursive;
+    line-height: 1.5ch;
 }
   
 #timer {/* and Countdown Timer*/
@@ -108,8 +110,8 @@ h2 {
     display: inline-block;
     align-items: center;
     text-align: center;
-    font-family: monospace;
-    font-size: 22px;
+    font-family: 'Goldman', cursive;
+    font-size: 30px;
     background-color:rgb(34, 173, 16);
     color: rgb(3, 3, 3);
     border: 0px;
@@ -118,6 +120,7 @@ h2 {
     cursor: pointer;
     margin-top:20px;
     width: 30%;
+    margin-left: 10px;
   
     
 }
