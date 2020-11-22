@@ -100,6 +100,7 @@ font-family: 'Goldman', cursive;
   cursor: pointer;
   margin-top:30px;
   width: 30%;
+  margin-left: 10px;
 
   
 }
@@ -109,7 +110,7 @@ font-family: 'Goldman', cursive;
 }
 
 #submit {
-  width: 94px;
+  width: 23%;
 }
 
 
