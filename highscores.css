@@ -1,0 +1,130 @@
+:root {
+    background-color: rgb(9, 10, 56);
+    }
+    
+  * {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    }
+  
+  body { /*webpage background*/
+    background-color: rgb(9, 10, 56);
+    text-align: center;
+    margin:40px;
+    }
+  
+  #end {
+    padding: 10px;
+    color: white;
+    
+  }
+    
+  h1 { /*user score*/
+    padding: 10px;
+    color: rgb(248, 2, 2);
+    font-family: 'Goldman', cursive;
+    font-size: 50px;
+  }
+  
+  h2 { /*"Enter to save your score"*/
+    padding: 10px;
+    color: white;
+    font-family: 'Goldman', cursive;
+    font-size: 50px;
+  }
+    
+  #score {
+    text-align: center;
+    color: white;
+    font-family: 'Goldman', cursive;
+    font-size: 30px;
+    margin-left: 40px;
+    padding: 20px;
+    }
+  
+    
+  .container {  /*box that surrounds question and choices*/
+      padding:20px;
+  }
+  
+  
+    .slide{ /* hides next slides - question answer areas combo*/ 
+      position: absolute;
+      left: 0px;
+      top: 300px;
+      width: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    
+    .current-slide{ /* current slide's visibility*/
+      opacity: 1;
+      z-index: 2;
+    }
+    
+  .btn { /*buttons: next, previous, submit*/
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-family: 'Goldman', cursive;
+    font-size: 25px;
+    background-color:rgb(34, 173, 16);
+    color: rgb(3, 3, 3);
+    border-radius: 4px;
+    padding: 25px;
+    cursor: pointer;
+    margin-top:20px;
+    width: 70%;
+  
+    
+  }
+  
+  .btn:hover { /*button display when mouse over*/
+    background-color: rgb(119, 112, 219);
+  }
+  
+  #username {
+    display: inline-block;
+    color:black;
+    margin:30px;
+    padding: 10px;
+    
+  
+  }
+  
+  
+  
+    
+  
+  
+    
+    
+    /*Media Queries*/
+    
+    /*When viewport reaches 690px*/ 
+    @media (max-width: 690px) {   
+      
+      /*reduce button size*/
+      .btn {                  
+          margin: 16px 0px 0px 0px;
+          padding: 10px 15px;
+          font-size: 1rem;
+      }
+    
+      
+    }
+    
+    /*When viewport reaches 500px*/ 
+    @media (max-width: 500px) {
+      
+      /*reduce button size*/
+      .btn {                
+        font-size: 0.8rem;
+      }
+    }
+  
