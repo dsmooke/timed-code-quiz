@@ -44,6 +44,7 @@ THEN I can save my initials and score
 After last week's assignment, we all needed psychic repair. After a much needed day-off, 
 I decided to try a different approach to this week's assignment: I would create a flowchart to break down each element of the quiz. The hope is that the flowshart will help me better understand and organize the JavaScript code. In addition to focusing on a flowchart, I also focused on making more universal and specific element ID names in order to make each file's code more readable and understandable. Redundancies is JavaScript and CSS can be the death of you...as can inconsistent variable names...and just not knowing what to google :)
 
+**View quiz:** [JavaScript Quiz](https://dsmooke.github.io/timed-code-quiz/)
 
 ## Mock-Up
 
@@ -55,7 +56,7 @@ The following animation demonstrates the application functionality:
 ![code quiz screenshot](/screenshot4.png)
 
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+![code quiz](/assets/04-web-apis-homework-demo.gif)
 
 
 
