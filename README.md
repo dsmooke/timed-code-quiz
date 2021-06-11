@@ -5,10 +5,15 @@
 <a href="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"><img alt="M.I.T. License use" src="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"/></a>
 
  </span>
+ 
+ 
+![code quiz screenshot](/screenshot1.png)
 
 ## Description
 
 A timed coding quiz with multiple-choice questions built from scratch that use JavaScript and APIs.
+
+View the deployed application [here](https://dsmooke.github.io/timed-code-quiz/).
 
 ## Technologies Used
 
