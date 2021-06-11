@@ -1,11 +1,19 @@
 # Timed Code Quiz
- A timed coding quiz with multiple-choice questions.
+
+<span align="left">
+
+<a href="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"><img alt="M.I.T. License use" src="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"/></a>
+
+ </span>
 
 ## Description
 
-This is the fourth assignment from the UConn Coding Bootcamp curriculm. This week combines our working knowledge of the first three week's topics (Git, Terminal, HTML, CSS, GitHub, GitHub Pages, GitLab, Responsiveness, and JavaScript) with the fourth week's topic: JavaScript & APIs.
+A timed coding quiz with multiple-choice questions built from scratch that use JavaScript and APIs.
 
-For this assignment we were to build a timed coding quiz with multiple-choice questions from scratch.
+## Technologies Used
+
+- JavaScript
+- APIs
 
 ## Goals
 
@@ -57,5 +65,16 @@ The following animation demonstrates the application functionality:
 ![code quiz screenshot](/screenshot3.png)
 ![code quiz screenshot](/screenshot4.png)
 
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Contact
+
+[Dana Smooke]("https://github.com/dsmooke")
+
+## License
+
+[MIT]("https://opensource.org/licenses/MIT")
+
+---
+
+© 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+
